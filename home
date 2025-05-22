@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Selamat Datang - Madin Roudlotul Muta'alimin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #0c1324;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .left h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .left p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 500px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: #e0e0e0;
+      color: #111;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-right: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #cfcfcf;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .right img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .arabic {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .arabic-sub {
+      font-size: 18px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        flex: none;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .left h1 {
+        font-size: 28px;
+      }
+
+      .arabic {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <h1>Selamat Datang</h1>
+      <p>di laman resmi Madin Roudlotul Muta’alimin Minggirsari,<br>Silahkan Input Nilai anda pada laman berikut:</p>
+      <div class="buttons">
+        <!-- Link ke file ujian-tulis.html -->
+        <a href="./input_nilai_tulis.html" target="_blank">Ujian Tulis</a>
+        <!-- Link ke file ujian-lisan.html -->
+        <a href="./input_nilai_lisan.html" target="_blank">Ujian Lisan</a>
+      </div>
+    </div>
+    <div class="right">
+      <img src="logo.png" alt="Logo Pondok">
+      <div class="arabic">المدرسة الدينية روضة المتعلمين</div>
+      <div class="arabic-sub">منجيِرْسَاري – كانيڬورا – الباليتاري</div>
+    </div>
+  </div>
+
+</body>
+</html>
